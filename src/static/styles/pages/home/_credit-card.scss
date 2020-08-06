@@ -1,0 +1,62 @@
+#home {
+  .credit-card {
+      background-color: $dark-blue;
+    margin: 24px 0;
+    @include xxl {
+      margin: 32px 0;
+    }
+    @include section-container;
+    .card-image-container{
+        .card-image{
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+    .card-heading{
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 8px;
+        @include md{
+          font-size: 22px;
+        }
+        @include xl{
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+    }
+    .card-description{
+        color: white;
+        font-size: 14px;
+        margin-bottom: 12px;
+        @include md{
+          font-size: 16px;
+        }
+        @include xxl{
+          max-width: 650px;
+          margin-bottom: 18px;
+        }
+    }
+    .button-container{
+        margin-top: 12px;
+        @include md{
+          margin-top: 24px;
+        }
+        .enquiry-button{
+          height: 100%;
+          border: none;
+          background-color: $orange;
+          @include xxl{
+              padding: 4px 30px;
+          }
+          span{
+          color: white;
+          font-family: $heading-font;
+          text-transform: capitalize;
+          font-size: 13px;
+          font-weight: 600;
+          }
+        }
+    }
+  }
+}
