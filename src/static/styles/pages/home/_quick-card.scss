@@ -1,0 +1,78 @@
+#home{
+  .quick-cards{
+    @include section-container;
+    .cards-row{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      @include lg{
+        margin-top: -60px;
+      }
+      @include xl{
+        margin-top: -80px;
+      }
+      @include xxl{
+        margin-top: -100px;
+      }
+    }
+    .darkCard{
+      background-color: $orange;
+      border: 2px solid $orange;
+      transition: $transition-main;
+      &:hover{
+        border: 2px solid $dark-blue;
+      }
+    }
+    .lightCard{
+      background-color: white;
+      border: 2px solid white;
+      transition: $transition-main;
+      &:hover{
+        border: 2px solid $orange;
+      }
+    }
+    .darkName{
+      color: white;
+    }
+    .lightName{
+      color: $dark-blue;
+    }
+    .service-card{
+      cursor: pointer;
+      box-shadow: $main-box-shadow;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      .ant-card-body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 12px;
+        @include msm{
+          flex-direction: row;
+          padding: 18px;
+        }
+        @include xxl{
+          padding: 24px;
+        }
+      }
+      .service-img{
+        width: 60px;
+        @include xxl{
+          width: 65px;
+        }
+      }
+      .service-name{
+        color: $dark-blue;
+        font-weight: 600;
+        font-size: 14px;
+        @include md{
+          font-size: 16px;
+          margin-left: 12px;
+        }
+        @include xxl{
+          margin-left: 12px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
