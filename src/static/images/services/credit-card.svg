@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="111" viewBox="0 0 111 111">
+  <defs>
+    <filter id="Path_435" x="0" y="0" width="111" height="111" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_342" data-name="Group 342" transform="translate(14642.5 -10051.5)">
+    <g id="Group_338" data-name="Group 338" transform="translate(-14632 10056)">
+      <g id="Group_277" data-name="Group 277">
+        <g transform="matrix(1, 0, 0, 1, -10.5, -4.5)" filter="url(#Path_435)">
+          <path id="Path_435-2" data-name="Path 435" d="M45,0A45,45,0,1,1,0,45,44.952,44.952,0,0,1,45,0Z" transform="translate(10.5 4.5)" fill="#f84923"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_337" data-name="Group 337" transform="translate(-102 -65)">
+      <g id="Group_105" data-name="Group 105" transform="translate(-14512.241 10146.346)">
+        <g id="Group_104" data-name="Group 104">
+          <path id="Path_368" data-name="Path 368" d="M13.8,54.669A1.808,1.808,0,0,1,12,53.012V17.657A1.713,1.713,0,0,1,13.8,16H65.447a1.808,1.808,0,0,1,1.8,1.657V52.874a1.713,1.713,0,0,1-1.8,1.657H13.8Z" transform="translate(-12 -16)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_107" data-name="Group 107" transform="translate(-14505.336 10151.869)">
+        <g id="Group_106" data-name="Group 106">
+          <path id="Path_369" data-name="Path 369" d="M55.669,20a1.381,1.381,0,1,1,0,2.762H18.381a1.381,1.381,0,1,1,0-2.762Z" transform="translate(-17 -20)" fill="#d3d5dd"/>
+        </g>
+      </g>
+      <g id="Group_109" data-name="Group 109" transform="translate(-14505.336 10158.775)">
+        <g id="Group_108" data-name="Group 108">
+          <path id="Path_370" data-name="Path 370" d="M55.669,25a1.381,1.381,0,1,1,0,2.762H18.381a1.381,1.381,0,1,1,0-2.762Z" transform="translate(-17 -25)" fill="#d3d5dd"/>
+        </g>
+      </g>
+      <g id="Group_336" data-name="Group 336" transform="translate(-14505.336 10165.485)">
+        <g id="Group_108-2" data-name="Group 108">
+          <path id="Path_370-2" data-name="Path 370" d="M55.669,25a1.381,1.381,0,1,1,0,2.762H18.381a1.381,1.381,0,1,1,0-2.762Z" transform="translate(-17 -25)" fill="#d3d5dd"/>
+        </g>
+      </g>
+      <g id="Group_113" data-name="Group 113" transform="translate(-14505.336 10173.424)">
+        <g id="Group_112" data-name="Group 112">
+          <path id="Path_372" data-name="Path 372" d="M29.429,35a1.384,1.384,0,0,1,1.381,1.381,1.485,1.485,0,0,1-1.381,1.381H18.381A1.485,1.485,0,0,1,17,36.381,1.384,1.384,0,0,1,18.381,35Z" transform="translate(-17 -35)" fill="#554860"/>
+        </g>
+      </g>
+      <text id="_" data-name="*" transform="translate(-14485 10179)" fill="#f84923" font-size="9" font-family="Corbel"><tspan x="0" y="0">*</tspan></text>
+      <text id="_2" data-name="*" transform="translate(-14480 10179)" fill="#f84923" font-size="9" font-family="Corbel"><tspan x="0" y="0">*</tspan></text>
+      <text id="_3" data-name="*" transform="translate(-14475 10179)" fill="#f84923" font-size="9" font-family="Corbel"><tspan x="0" y="0">*</tspan></text>
+      <text id="_4" data-name="*" transform="translate(-14470 10179)" fill="#f84923" font-size="9" font-family="Corbel"><tspan x="0" y="0">*</tspan></text>
+    </g>
+  </g>
+</svg>
