@@ -3,6 +3,7 @@ import Banner from './Banner';
 import QuickCards from './QuickCard';
 import Quote from './Quote';
 import CreditCard from './CreditCards';
+import About from './About';
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         <QuickCards />
         <Quote />
         <CreditCard />
-
+        <About />
         </div>
     )
 }

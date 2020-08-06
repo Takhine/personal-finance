@@ -9,6 +9,7 @@
       justify-content: center;
       color: white;
       display: block;
+      font-size: 12px;
     }
     .footer-row {
       .footer-col {
@@ -18,6 +19,12 @@
         }
         @include lg {
           margin-top: 12px;
+        }
+        .list-header{
+          color: white;
+          font-weight: 600;
+          font-size: 18px;
+          margin-bottom: 24px;
         }
       }
       .ant-col {
@@ -76,7 +83,7 @@
       font-weight: 500;
       font-family: $main-font;
       @include lg {
-        margin-top: -10px;
+        margin-top: -7px;
         font-size: 20px;
       }
       @include xl {
@@ -95,20 +102,12 @@
           font-weight: 500;
           font-size: 13px;
           display: block;
-          text-align: center;
-          @include lg {
-            text-align: left;
-          }
         }
         .contact {
           color: white;
           font-family: $heading-font;
           margin-bottom: 12px;
           display: block;
-          text-align: center;
-          @include md {
-            text-align: left;
-          }
         }
       }
     }

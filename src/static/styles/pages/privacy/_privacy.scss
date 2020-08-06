@@ -1,0 +1,66 @@
+#privacy{
+  @include section-container;
+  margin-top: 60px;
+  @include msm {
+    margin-top: 65px;
+  }
+  @include xxxl {
+    margin-top: 70px;
+  }
+  .privacy-heading{
+    color: $orange;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+    @include md {
+      font-size: 24px;
+    }
+    @include xl {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+  .privacy-subheading{
+    color: $orange;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    @include md {
+      font-size: 22px;
+    }
+    @include xl {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .privacy-content{
+    margin-top: 16px;
+  }
+  .privacy-description {
+    color: $dark-blue;
+    font-size: 14px;
+    margin-bottom: 12px;
+    margin: auto;
+    @include md {
+      font-size: 16px;
+    }
+    @include xxl {
+      margin-bottom: 18px;
+    }
+  }
+
+  .privacy-list{
+    .privacy-list-item{
+      color: $dark-blue;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin: auto;
+    @include md {
+      font-size: 16px;
+    }
+    @include xxl {
+      margin-bottom: 12px;
+    }
+    }
+  }
+}

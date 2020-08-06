@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "antd";
+import { Row, Col, Divider } from "antd";
 import { NavLink } from "react-router-dom";
 
 
@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <Row gutter={8} className="footer-row">
-        <Col xs={24} sm={12} md={8} lg={6} className="footer-col">
-        <h4>Quick Links</h4>
+        <Col xs={24} sm={12} md={9} className="footer-col">
+        <h4 className="list-header">Quick Links</h4>
           <ul className="footer-list">
             <li>
               <NavLink exact to="/">
@@ -32,8 +32,8 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col xs={24} sm={12} md={8} lg={6} className="footer-col">
-        <h4>Banking Resources</h4>
+        <Col xs={24} sm={12} md={9} className="footer-col">
+        <h4 className="list-header">Banking Resources</h4>
           <ul className="footer-list">
             <li>
               <NavLink exact to="/services">
@@ -57,12 +57,12 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col xs={24} md={12} lg={6} className="footer-col">
-          <h3 className="contact-header">Contact us </h3>
+        <Col xs={24} md={6} className="footer-col">
+          <h3 className="list-header">Contact us </h3>
           <ul className="footer-list">
             <li>
-              <a className="contact" href="mailto: mona@bodypolitic.info">
-                mona@bodypolitic.info
+              <a className="contact" href="mailto: admin@peronalfinancegulf.com">
+                admin@peronalfinancegulf.com
               </a>
             </li>
             <li>
@@ -70,19 +70,15 @@ const Footer = () => {
                 (347) 709-0030
               </a>
             </li>
-            <li>
-              <a
-                className="contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://goo.gl/maps/R5ucU9V8ZgYfkd9H7"
-              >
-                186 Montague St, Ground Floor through Lobby Brooklyn, NY 11201
-              </a>
-            </li>
           </ul>
         </Col>
       </Row>
+      <Divider style={{borderColor: 'white'}} />
+      <div>
+      <p className="copyright">
+      ©2020 personalfinancegulf.com The information given by Personal Finance Gulf on bank loan rates/information is on the best result of our effort. As the interest rates and terms are dynamic, the information given on personalfinancegulf.com is for information purposes only and does not offer advice. Please confirm always with the banks/financial providers directly before committing yourselves. Our organization is not responsible for any contract/service you get through such Banks/Financial Institutions/Agents.
+      </p>
+      </div>
     </div>
   );
 };
