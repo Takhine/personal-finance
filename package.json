@@ -2,7 +2,6 @@
   "name": "secure-finance",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://personal-finance-gulf.herokuapp.com",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,7 +20,7 @@
     "react-text-loop": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start -p $PORT",
+    "start": "react-scripts start -p 3000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
