@@ -1,8 +1,7 @@
 import React from "react";
-import { Row, Col, Button, Carousel } from "antd";
-import orangeButton from 'static/images/icons/orange-arrow-button.svg';
-import whiteButton from 'static/images/icons/white-arrow-button.svg';
-
+import orangeButton from "static/images/icons/orange-arrow-button.svg";
+import whiteButton from "static/images/icons/white-arrow-button.svg";
+import { Link } from "react-scroll";
 
 export default function Banner() {
   return (
@@ -15,22 +14,74 @@ export default function Banner() {
       </p>
 
       <div className="shortcut-container">
-        <div className="shortcut">
-          <img className="shortcut-image" src={orangeButton} alt="orange button" />
-          <span className="shortcut-name">Credit Cards</span>
-        </div>
-        <div className="shortcut">
-          <img className="shortcut-image" src={whiteButton} alt="orange button" />
-          <span className="shortcut-name">Personal Loans</span>
-        </div>
-        <div className="shortcut">
-          <img className="shortcut-image" src={orangeButton} alt="orange button" />
-          <span className="shortcut-name">Home Mortgage</span>
-        </div>
-        <div className="shortcut">
-          <img className="shortcut-image" src={whiteButton} alt="orange button" />
-          <span className="shortcut-name">Auto-Loans</span>
-        </div>
+        <Link
+          activeClass="active"
+          to="credit-card"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-100}
+        >
+          <div className="shortcut">
+            <img
+              className="shortcut-image"
+              src={orangeButton}
+              alt="orange button"
+            />
+            <span className="shortcut-name">Credit Cards</span>
+          </div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="personal-loan"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-100}
+        >
+          <div className="shortcut">
+            <img
+              className="shortcut-image"
+              src={whiteButton}
+              alt="orange button"
+            />
+            <span className="shortcut-name">Personal Loans</span>
+          </div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="home-loan"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-100}
+        >
+          <div className="shortcut">
+            <img
+              className="shortcut-image"
+              src={orangeButton}
+              alt="orange button"
+            />
+            <span className="shortcut-name">Home Mortgage</span>
+          </div>
+        </Link>
+        <Link
+          activeClass="active"
+          to="auto-loan"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-100}
+        >
+          <div className="shortcut">
+            <img
+              className="shortcut-image"
+              src={whiteButton}
+              alt="orange button"
+            />
+            <span className="shortcut-name">Auto-Loans</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col, Button, Carousel } from "antd";
 import TextLoop from "react-text-loop";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 import slide1 from "static/images/slider/slide1.jpg";
 import slide2 from "static/images/slider/slide2.jpg";
@@ -23,8 +25,20 @@ export default function Banner() {
               </TextLoop>{" "}
             </h2>
             <div className="buttons-container">
+            <NavLink exact to="/contact-us" activeClassName="selected">
+
               <Button className="apply">Apply Now</Button>
-              <Button className="learn">Learn More</Button>
+              </NavLink>
+              <Link
+          activeClass="active"
+          to="about-us"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-150}
+        >
+        <Button className="learn">Learn More</Button>
+        </Link>
             </div>
           </div>
         </Col>

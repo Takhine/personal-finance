@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function About() {
   return (
     <div className="about">
-      <h2 className="about-heading">About Us</h2>
+      <h2 className="about-heading" name="about-us">About Us</h2>
       <p className="about-description">
         Personal Finance Gulf is a premium credit and financing organization
         specially built together by banking bigwigs of the United Arab Emirates
@@ -26,7 +26,7 @@ export default function About() {
         the client. We guarantee a seamless experience and a long-term
         association to all our clients.
       </p>
-      <NavLink exact to="/contact"><p className="contact-link">You Can Get In Touch With Our Representative here</p></NavLink>
+      <NavLink exact to="/contact-us"><p className="contact-link">You Can Get In Touch With Our Representative here</p></NavLink>
     </div>
   );
 }

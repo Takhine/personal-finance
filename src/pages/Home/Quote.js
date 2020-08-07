@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
+import { NavLink } from "react-router-dom";
+
 import rootsImage from "static/images/roots-image.jpg";
 export default function Quote() {
   return (
@@ -19,7 +21,10 @@ export default function Quote() {
             your financial needs and goals. Get in touch with us.
           </p>
           <div className="button-container">
+          <NavLink exact to="/contact-us" activeClassName="selected">
+
             <Button className="enquiry-button">Enquire Now</Button>
+            </NavLink>
           </div>
         </Col>
         <Col xs={24} md={10}>

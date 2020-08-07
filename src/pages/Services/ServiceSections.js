@@ -1,11 +1,12 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
+import { NavLink } from "react-router-dom";
 
 export default function ServicesSection() {
   return (
     <div className="services-section">
       <div className="service">
-        <h3 className="service-name">Credit Cards</h3>
+        <h3 className="service-name" name="credit-card">Credit Cards</h3>
         <p className="main-service-description">
           When it comes to the fast paced lifestyle of UAE, credit cards always
           deserve a special mention. Most of the reputed financial organizations
@@ -73,12 +74,15 @@ export default function ServicesSection() {
               here. Our executive will contact you with personalised details for
               your needs.
             </h4>
+            <NavLink exact to="/contact-us" activeClassName="selected">
+
             <Button className="service-button">Contact us</Button>
+            </NavLink>
           </Col>
         </Row>
       </div>
       <div className="service withBackground">
-        <h3 className="service-name white">Personal Loans</h3>
+        <h3 className="service-name white" name="personal-loan">Personal Loans</h3>
         <p className="main-service-description white">
           Personal loan is a type of unsecured loan. We help people during their
           period of monetary crisis with quick disbursement of loans and easy
@@ -102,7 +106,7 @@ export default function ServicesSection() {
         </p>
       </div>
       <div className="service">
-        <h3 className="service-name">Home Mortgage</h3>
+        <h3 className="service-name" name="home-loan">Home Mortgage</h3>
         <p className="main-service-description">
           Personal Finance Gulf is here to help you fulfil your dreams with
           worrying about your finances. Everyone dreams of a home of his own. A
@@ -190,7 +194,7 @@ export default function ServicesSection() {
       </div>
       <div className="service withBackground">
 
-            <h3 className="service-name white">Auto Loans</h3>
+            <h3 className="service-name white" name="auto-loan">Auto Loans</h3>
             <h4 className="section-name" style={{textAlign: 'center'}}>
               Looking For Your Fantasy Car ? A Car For Your Family? Don’t Wait
               Anymore and Buy It Today!
@@ -264,7 +268,10 @@ export default function ServicesSection() {
                     tenure of the loan.
                   </li>
                 </ul>
+            <NavLink exact to="/contact-us" activeClassName="selected">
+
                 <Button className="service-button">Contact us</Button>
+                </NavLink>
               </Col>
             </Row>
       </div>
