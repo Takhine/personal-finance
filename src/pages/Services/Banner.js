@@ -25,7 +25,7 @@ export default function Banner() {
         </div>
         <div className="shortcut">
           <img className="shortcut-image" src={orangeButton} alt="orange button" />
-          <span className="shortcut-name">Home Loans</span>
+          <span className="shortcut-name">Home Mortgage</span>
         </div>
         <div className="shortcut">
           <img className="shortcut-image" src={whiteButton} alt="orange button" />

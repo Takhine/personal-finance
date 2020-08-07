@@ -1,26 +1,25 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
-import rootsImage from 'static/images/roots-image.jpg';
+import rootsImage from "static/images/roots-image.jpg";
 export default function Quote() {
   return (
     <div className="quote">
       <Row gutter={12}>
         <Col xs={24} md={14}>
-          <h2 className="quote-heading">Section Heading</h2>
+          <h2 className="quote-heading">Process and How we can help</h2>
           <p className="quote-description">
-            Get personal loan, credit card loan, business loan facilities, even
-            at the nick of time in UAE. Your financial needs will be met once
-            you get in touch with us. Money in gulf. (United Arab Emirates).
+            Personal Finance Gulf is here for all your personal loan, credit
+            card loan, auto-loan and home-mortgage requirements. We are
+            associated with reputed banks and organizations who work along with
+            us to provide you with quick finance at the best rate.
           </p>
           <p className="quote-description">
-            Get personal loan, credit card loan, business loan facilities, even
-            at the nick of time in UAE. Your financial needs will be met once
-            you get in touch with us. Money in gulf. (United Arab Emirates).
+            Experience easier than ever Credit Card, Personal Loan, Home
+            Mortgage and Auto-Loan facilities with us and we will help you meet
+            your financial needs and goals. Get in touch with us.
           </p>
           <div className="button-container">
-          <Button className="enquiry-button">
-          Enquire Now
-          </Button>
+            <Button className="enquiry-button">Enquire Now</Button>
           </div>
         </Col>
         <Col xs={24} md={10}>
