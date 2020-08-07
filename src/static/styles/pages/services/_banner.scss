@@ -1,0 +1,69 @@
+#services{
+    .services-banner{
+    background-color: $purple;
+    margin-top: 60px;
+    @include msm {
+      margin-top: 65px;
+    }
+    @include xxxl {
+      margin-top: 70px;
+    }
+    @include section-container;
+    .main-heading{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 8px;
+        @include md{
+          font-size: 24px;
+        }
+        @include xl{
+          font-size: 32px;
+        }
+        @include xxl{
+          font-size: 48px;
+        }
+        span{
+            color: $orange;
+        }
+    }
+    .services-description{
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        @include md{
+          font-size: 16px;
+        }
+        @include xl{
+          font-size: 18px;
+        }
+        @include xxl{
+          font-size: 24px;
+        }
+    }
+    .shortcut-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        @include xl{
+            margin-top: 120px;
+        }
+        .shortcut{
+            display: flex;
+            align-items: center;
+            margin-right: 12px;
+            .shortcut-image{
+                width: 60px;
+                height: 60px;
+            }
+            .shortcut-name{
+                color: white;
+                font-size: 18px;
+                margin-bottom: 8px;
+                font-weight: 400;
+            }
+        }
+    }
+    }
+}

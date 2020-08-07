@@ -1,13 +1,14 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
 import { NavLink } from "react-router-dom";
-
+import footerBackground from 'static/images/footer/footer-background.svg';
 
 const Footer = () => {
   return (
     <div className="footer">
+    <img className="footer-image" src={footerBackground} alt="Personal Finance Gulf" />
       <Row gutter={8} className="footer-row">
-        <Col xs={24} sm={12} md={9} className="footer-col">
+        <Col xs={24} sm={12} lg={9} className="footer-col">
         <h4 className="list-header">Quick Links</h4>
           <ul className="footer-list">
             <li>
@@ -32,7 +33,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col xs={24} sm={12} md={9} className="footer-col">
+        <Col xs={24} sm={12} lg={9} className="footer-col">
         <h4 className="list-header">Banking Resources</h4>
           <ul className="footer-list">
             <li>
@@ -57,17 +58,17 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col xs={24} md={6} className="footer-col">
+        <Col xs={24} lg={6} className="footer-col">
           <h3 className="list-header">Contact us </h3>
           <ul className="footer-list">
             <li>
-              <a className="contact" href="mailto: admin@peronalfinancegulf.com">
-                admin@peronalfinancegulf.com
+              <a className="contact" href="mailto: admin@personalfinancegulf.com">
+                admin@personalfinancegulf.com
               </a>
             </li>
             <li>
-              <a className="contact" href="tel:(347) 709-0030">
-                (347) 709-0030
+              <a className="contact" href="tel:+971557782895">
+              +97 1557782895
               </a>
             </li>
           </ul>

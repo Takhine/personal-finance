@@ -75,10 +75,10 @@
 @mixin primary-button {
     border-radius: 32px;
     height: 35px;
-    background-color: $dark-blue;
+    background-color: $orange;
     color: white;
     text-transform: uppercase;
-    border: 1px solid $dark-blue;
+    border: 1px solid $orange;
     box-shadow: $dark-box-shadow;
     min-width: 135px;
     padding: 2px 12px;
@@ -113,7 +113,7 @@
     @include primary-button;
     background-color: white;
     border: 1px solid white;
-    color: $dark-blue;
+    color: $orange;
 }
 
 @mixin light-blue-button{

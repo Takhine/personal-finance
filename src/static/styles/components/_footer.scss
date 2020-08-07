@@ -1,7 +1,21 @@
 .footer {
     @include sub-section-container;
     padding-top: 64px;
-    background-color: $light-blue;
+    background-color: black;
+    position: relative;
+    border-top: 2px solid #ff5733;
+    .footer-image{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      opacity: 0.3;
+      height: 100%;
+      width: 100%;
+      padding: 20px;
+    }
     .copyright {
       width: 100%;
       text-align: center;
@@ -28,12 +42,7 @@
         }
       }
       .ant-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include md {
           display: block;
-        }
       }
     }
     .brand-container {
@@ -53,7 +62,7 @@
         margin-top: 24px;
         padding: 0;
         @include md {
-          max-width: 100px;
+        max-width: 100px;
         padding: 0 4px;
   
         }
@@ -77,36 +86,26 @@
         }
       }
     }
-    .contact-header {
-      color: white;
-      font-size: 18px;
-      font-weight: 500;
-      font-family: $main-font;
-      @include lg {
-        margin-top: -7px;
-        font-size: 20px;
-      }
-      @include xl {
-        font-size: 24px;
-      }
-    }
     .footer-list {
       list-style: none;
       padding: 0;
       li {
         .link {
-          color: white;
+          color: $orange;
           text-transform: uppercase;
           font-family: $heading-font;
           margin-bottom: 12px;
-          font-weight: 500;
-          font-size: 13px;
+          font-weight: 600;
+          font-size: 14px;
           display: block;
+          letter-spacing: 1px;
         }
         .contact {
-          color: white;
+          color: $orange;
           font-family: $heading-font;
+          letter-spacing: 1px;
           margin-bottom: 12px;
+          font-weight: 600;
           display: block;
         }
       }

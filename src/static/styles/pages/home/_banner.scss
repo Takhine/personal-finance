@@ -1,11 +1,6 @@
 #home {
   .home-banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    background-color: aliceblue;
+    background-color: $purple;
 
     margin-top: 60px;
     @include msm {
@@ -15,8 +10,59 @@
       margin-top: 70px;
     }
     .image-carousel {
-      height: 400px;
-      .image-container {
+      max-height: 400px;
+      @include xxl {
+        height: 400px;
+      }
+      .slick-list {
+        height: inherit;
+      }
+    }
+    .banner-content {
+      padding: 16px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      @include msm {
+        padding: 24px 32px;
+      }
+      @include md {
+        align-items: flex-start;
+      }
+      @include mmd {
+        padding: 32px 0 0 80px;
+      }
+      @include xl {
+        padding: 32px 0 0 120px;
+      }
+      .main-heading {
+        color: white;
+        font-size: 18px;
+        @include md{
+          font-size: 24px;
+        }
+        @include xl{
+          font-size: 32px;
+        }
+        @include xxl{
+          font-size: 48px;
+        }
+        .service {
+          color: $orange;
+          margin-left: 6px;
+        }
+      }
+      .buttons-container{
+        .apply{
+          @include reverse-primary-button;
+          margin-right: 12px;
+        }
+        .learn{
+          @include primary-button;
+        }
       }
     }
   }

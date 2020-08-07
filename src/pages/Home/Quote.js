@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
-import rootsImage from 'static/images/roots-image.png';
+import rootsImage from 'static/images/roots-image.jpg';
 export default function Quote() {
   return (
     <div className="quote">

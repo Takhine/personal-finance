@@ -1,53 +1,48 @@
-#about{
-    .contact{
-        .left-col{
-          @include lg{
-            background-image: url('/images/banners/contact-banner.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            transition: $transition-main;
-            &:hover{
-                transform: scale(1.1);
-                transition: $transition-main;
-            }
-          }
-        }
-        .right-col{
-            background-color: $fade-blue;
-            padding: 12px;
-            padding-top: 24px;
-            @include msm {
-              padding-right: 32px;
-              padding-left: 32px;
-            }
-            @include lg {
-              padding-right: 120px;
-              padding-left: 80px;
-              padding-top: 32px;
-            }
-            @include xxl {
-              padding-right: 140px;
-              padding-left: 120px;
-            }
-            .contact-title{
-                color: $dark-blue;
-                font-size: 24px;
-                font-weight: 500;
-                margin-bottom: 16px;
-                line-height: 1;
-                @include msm {
-                  font-size: 32px;
-                }
-                @include lg {
-                  font-size: 40px;
-                  font-weight: 700;
-                  margin-bottom: 18px;
-                }
-            }
-            .submit-button{
-                @include square-button;
-            }
-        }
+#contact{
+  @include section-container;
+  margin-top: 60px;
+  @include msm {
+    margin-top: 65px;
+  }
+  @include xxxl {
+    margin-top: 70px;
+  }
+  .main-heading{
+    color: $purple;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 8px;
+    @include md{
+      font-size: 24px;
     }
+    @include xl{
+      font-size: 32px;
+    }
+    @include xxl{
+      font-size: 48px;
+    }
+    span{
+        color: $orange;
+    }
+}
+.contact-form{
+  display: flex;
+  justify-content: center;
+  form{
+    width: 100%;
+    max-width: 800px;
+    .ant-row{
+      flex-direction: column;
+      .ant-form-item-label{
+        margin-right: auto;
+      }
+      .button-container{
+        .ant-form-item-control-input-content{
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
 }

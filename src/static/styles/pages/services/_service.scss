@@ -1,0 +1,55 @@
+#services {
+  .services-section {
+    .service {
+      @include section-container;
+      display: flex;
+      align-items: center;
+      min-height: 50vh;
+      &.withBackground {
+        background-color: $purple;
+        border-top: 2px solid #ff5733;
+        border-bottom: 2px solid #ff5733;
+      }
+      .ant-row{
+          width: 100%
+      }
+      .service-name {
+        color: $purple;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 8px;
+        &.white {
+          color: white;
+        }
+        @include md {
+          font-size: 22px;
+        }
+        @include xl {
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+      }
+      .service-description {
+        color: $dark-blue;
+        font-size: 14px;
+        margin-bottom: 12px;
+        &.white {
+          color: white;
+        }
+        @include md {
+          font-size: 16px;
+        }
+        @include xxl {
+          max-width: 650px;
+          margin-bottom: 18px;
+        }
+      }
+
+      .service-image-container {
+        .service-image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
