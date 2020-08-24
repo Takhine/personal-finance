@@ -17,8 +17,8 @@ export default function About() {
         Personal Finance Gulf not only gets the funds processed by notable
         institutions but also takes care of the procedure and paper-work, so the
         clients don’t have to get into the hassle at any point in the process.
-        We provide a variety of services including Personal Loan, Credit Cards,
-        Auto Loan and Mortgage with processes that can disburse your required
+        We provide a variety of services including Personal mortgage, Credit Cards,
+        Auto Mortgage and Mortgage with processes that can disburse your required
         finance in hours!
       </p>
       <p className="about-description">

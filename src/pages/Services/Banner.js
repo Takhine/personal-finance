@@ -45,7 +45,7 @@ export default function Banner() {
               src={whiteButton}
               alt="orange button"
             />
-            <span className="shortcut-name">Personal Loans</span>
+            <span className="shortcut-name">Personal Mortgages</span>
           </div>
         </Link>
         <Link
@@ -79,7 +79,7 @@ export default function Banner() {
               src={whiteButton}
               alt="orange button"
             />
-            <span className="shortcut-name">Auto-Loans</span>
+            <span className="shortcut-name">Auto-Mortgages</span>
           </div>
         </Link>
       </div>

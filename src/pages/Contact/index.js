@@ -106,14 +106,14 @@ export default function Contact() {
           <Form.Item label="Apply for" >
             <Select onChange={e => setApplyFor(e)} >
               <Select.Option value="credit card">Credit Card</Select.Option>
-              <Select.Option value="personal loan">Personal Loan</Select.Option>
-              <Select.Option value="auto loan">Auto Loan</Select.Option>
-              <Select.Option value="home loan">Home Loan</Select.Option>
+              <Select.Option value="personal mortgage">Personal mortgage</Select.Option>
+              <Select.Option value="auto mortgage">Auto mortgage</Select.Option>
+              <Select.Option value="home mortgage">Home mortgage</Select.Option>
             </Select>
           </Form.Item>
           <Form.Item
             name="amount"
-            label="Loan Amount"
+            label="Mortgage Amount"
             rules={[{ required: true }]}
             onChange={(e) => setLoanAmt(e.target.value)}
             value={loanAmt}

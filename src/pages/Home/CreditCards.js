@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
-import creditImage from "static/images/credit-image.svg";
+import creditImage from "static/images/credit-image.jpeg";
 import { NavLink } from "react-router-dom";
 
 export default function CreditCard() {
@@ -24,9 +24,9 @@ export default function CreditCard() {
             facilities.
           </p>
           <div className="button-container">
-          <NavLink exact to="/contact-us" activeClassName="selected">
+            <NavLink exact to="/contact-us" activeClassName="selected">
 
-            <Button className="enquiry-button">Apply Now</Button>
+              <Button className="enquiry-button">Apply Now</Button>
             </NavLink>
           </div>
         </Col>

@@ -18,27 +18,27 @@ export default function Banner() {
             <h2 className="main-heading">
               Apply for
               <TextLoop interval={2940} adjustingSpeed={120}>
-                <span className="service"> Personal Loan</span>
-                <span className="service"> Home Loan</span>
-                <span className="service"> Auto Loan</span>
+                <span className="service"> Personal Mortgage</span>
+                <span className="service"> Home Mortgage</span>
+                <span className="service"> Auto Mortgage</span>
                 <span className="service"> Credit Cards</span>
               </TextLoop>{" "}
             </h2>
             <div className="buttons-container">
-            <NavLink exact to="/contact-us" activeClassName="selected">
+              <NavLink exact to="/contact-us" activeClassName="selected">
 
-              <Button className="apply">Apply Now</Button>
+                <Button className="apply">Apply Now</Button>
               </NavLink>
               <Link
-          activeClass="active"
-          to="about-us"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-150}
-        >
-        <Button className="learn">Learn More</Button>
-        </Link>
+                activeClass="active"
+                to="about-us"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-150}
+              >
+                <Button className="learn">Learn More</Button>
+              </Link>
             </div>
           </div>
         </Col>
@@ -52,13 +52,13 @@ export default function Banner() {
             pauseOnFocus={false}
           >
             <div className="image-container">
-              <img src={slide1} alt="Personal Loan" />
+              <img src={slide1} alt="Personal Mortgage" />
             </div>
             <div className="image-container">
-              <img src={slide2} alt="Home Loan" />
+              <img src={slide2} alt="Home Mortgage" />
             </div>
             <div className="image-container">
-              <img src={slide3} alt="Auto Loan" />
+              <img src={slide3} alt="Auto Mortgage" />
             </div>
             <div className="image-container">
               <img src={slide4} alt="Credit Cards" />

@@ -12,24 +12,24 @@ const services = [
     id: 1,
     img: creditCard,
     name: "Credit Card",
-    dark: false,
+    dark: true,
   },
   {
     id: 2,
     img: personalLoan,
-    name: "Personal Loan",
+    name: "Personal Mortgage",
     dark: true,
   },
   {
     id: 3,
     img: homeLoan,
-    name: "Home Loan",
-    dark: false,
+    name: "Home Mortgage",
+    dark: true,
   },
   {
     id: 4,
     img: autoLoan,
-    name: "Auto-Loan",
+    name: "Auto-Mortgage",
     dark: true,
   },
 ];
@@ -40,14 +40,12 @@ export default function QuickCard() {
         {services.map((service) => (
           <Col xs={12} lg={6}>
             <Card
-            hoverable={false}
-            bordered={false}
+              hoverable={false}
+              bordered={false}
               style={
-                service.dark
-                  ? { backgroundColor: "#FF441C" }
-                  : { backgroundColor: "#FFFFFF" }
+                { backgroundColor: "#FF441C" }
               }
-              className={`service-card ${service.dark? 'darkCard':'lightCard'}`}
+              className={`service-card darkCard`}
             >
               <img
                 className="service-img"
@@ -56,9 +54,9 @@ export default function QuickCard() {
               />
               <h3
                 style={
-                  service.dark ? { color: "#FFFFFF" } : { color: "#554860" }
+                  { color: "#FFFFFF" }
                 }
-              className={`service-name ${service.dark? 'darkName':'lightName'}`}
+                className={`service-name darkName`}
 
               >
                 {service.name}
